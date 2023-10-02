@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>this</title>
+	<script type="text/javascript">
+		var person = {
+			firstName = "Rahul",
+			secondName = "kumar",
+			fullName : function (){
+				// body...
+				return this.firstName + this.secondName;
+			}
+		};
+		document.write("<h1>"+person.fullName());
+
+
+
+
+
+
+	// 	 var x = Math.round(3.4);
+	 // document.write("<h1>x="+x+"</h1>");
+	 // 	var y = Math.pow(4, 5);
+	 // 	document.write("<h1>y="+y+"</h1>");
+
+	 // 	var z = Math.sqrt(4);
+	 // 	document.write("<h1>z="+z+"</h1>");
+
+	// 	var a = Math.abs(-4);
+	 // 	document.write("<h1>a="+a+"</h1>");
+
+	 // 	var b = Math.ceil(5.2);
+	 // 	document.write("<h1>b="+b+"</h1>");
+
+	 // 	var c = Math.floor(4.9);
+	 // 	document.write("<h1>c="+c+"</h1>");
+
+	 // 	var d = Math.min(4,2,5);
+	 // 	document.write("<h1>d="+d+"</h1>");
+
+	 // 	var e = Math.max(4,2,5);
+	 // 	document.write("<h1>e="+e+"</h1>");
+
+	 // 	var f = Math.random(4);
+	 // 	document.write("<h1>f="+f+"</h1>");
+
+	 // 	var g = Math.random();
+	 // 	document.write("<h1>g="+g+"</h1>");
+
+	 // 	var h = Math.random()*10000;
+	 // 	document.write("<h1>otp="+h+"</h1>");
+
+	 // 	var i = Math.floor(Math.random()*10000);
+	 // 	document.write("<h1>otp="+i+"</h1>");
+
+	 // 	function getOTP() {
+	 // 		// body...
+	 // 		var x = Math.random()*10000;
+	 // 		alert(x);
+	 // 		var otp = Math.floor(x);
+	 // 		document.write(otp);
+	 // 	}
+	</script>
+</head>
+<body>
+	<!--- <button onclick="getOTP()">OTP</button> --->
+	<button onclick="this.style.background = 'red"> click me to hide me</button>
+
+</body>
+</html>

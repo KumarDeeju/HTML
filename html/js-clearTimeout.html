@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tata</title>
+
+</head>
+<script type="text/javascript">
+	var my;
+	function Start() {
+		my = setTimeout(
+			function(){
+				document.write("<h1>Bhagalpur</h>");
+			},
+			5000
+			);
+		
+	}
+	function Stop(){
+		clearTimeout(my);
+		alert("timeOut Stop");
+	}
+
+</script>
+<body>
+	<button onclick="Start()">Start</button>
+	<button onclick="Stop()">Stop</button>
+</body>
+</html>

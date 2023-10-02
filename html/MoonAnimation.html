@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			height: 700px;
+			width: 100%;
+			border: 5px red solid;
+			position: relative;
+			margin top: 50px;
+			overflow: hidden;
+		
+
+		}
+		.image{
+			width: 100%;
+			height: 600px;
+			position: absolute;
+			bottom:-50px;
+			opacity: 0.0;
+				
+		}
+		.bb{
+			width: 30%;
+			height: 300px;
+			position: absolute;
+			bottom: -30px;
+			right: -30px;
+/*			opacity: 0.4;*/
+		}
+		.cc{
+			width: 30%;
+			height: 400px;
+			position: absolute;
+			right: 400px;
+			bottom: -50px;
+			margin: auto;
+/*			opacity: 0.5;*/
+			}
+		.ee{
+			width: 20%;
+			height: 150px;
+			position: absolute;
+			right: 850px;
+			bottom: -10px;
+/*			opacity: 0.5;*/
+		}
+		/*.gg{
+			width: 10%;
+			height: 300px;
+			position: absolute;
+			left: 500px;
+			bottom: -10px;
+			left: 10px;
+			opacity: 0.7;
+		}*/
+		.ff{
+			width: 30%;
+			height: 300px;
+			position: absolute;
+			left: -30px;
+			bottom: -30px;
+/*			opacity: 0.8;*/
+		}
+		.sun{
+			height: 120px;
+			width: 120px;
+			background-color: rgba(255,165, 0, 1);
+			border-radius: 50%;
+			position: absolute;
+			top: 50px;
+			left: -15px;
+			animation: sun 15s infinite;
+		}
+
+		/*.cloud1 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 20px;
+			left: -10px;
+			opacity: 0.8;
+
+		}*/
+		.cloud2 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 10px;
+			left: -10px;
+			opacity: 0.8;
+			animation: cloud2 7s infinite;
+
+		}
+		.cloud3 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 100px;
+		    left: 600px;
+			opacity: 0.8;
+			animation: cloud3 5s infinite;
+
+		}
+		.cloud4 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 30px;
+			left: 1300px;
+			opacity: 0.8;
+			animation: cloud4 5s infinite;
+
+		}
+		.cloud5 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 50px;
+			left: 600px;
+			opacity: 0.8;
+			animation: cloud5 5s infinite;
+
+		}
+		.cloud6 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 100px;
+			left: 750px;
+			opacity: 0.8;
+			animation: cloud6 5s infinite;
+
+		}
+		.cloud7 {
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 10px;
+			left: 1000px;
+			opacity: 0.8;
+			animation: cloud7 10s infinite;
+
+		}
+		@keyframes sun{
+			from {
+				top: 30px;
+			left: -15px;
+			background-color: rgba(257,185, 0.5,0.1);
+			}
+			to{
+				top: 200px;
+				left: 110%;
+				background-color: rgba(255,165, 0, 1);
+			}
+		}
+		@keyframes cloud2{
+			from {
+				top: 10px;
+			left: -10px;
+			}
+			to{
+				top: 10px;
+			left: 110%;
+			}
+		}
+		@keyframes cloud3{
+			from {
+				top: 100px;
+		    right: 600px;
+			}
+			to{
+				top: 100px;
+			left: 110%;
+			}
+		}
+		@keyframes cloud4{
+			from {
+				top: 30px;
+			right: -10px;
+			}
+			to{
+				top: 30px;
+			left: 110%;
+			}
+		}
+		@keyframes cloud5{
+			from {
+				top: 100px;
+			left: 600px;
+			}
+			to{
+				top: 10px;
+			right: 10%;
+			}
+		}
+		@keyframes cloud6{
+			from {
+				top: 30px;
+			right: -10px;
+			}
+			to{
+				top: 30px;
+			left: -20%;
+			}
+		}
+		@keyframes cloud7{
+			from {
+				top: 30px;
+			right: -10px;
+			}
+			to{
+				top: 80px;
+			left: -20%;
+			}
+		}
+		
+
+	</style>
+
+</head>
+<body>
+	<div class="box">
+
+		 <!-- <---............ green place .............-- -->
+
+		<div class="image">
+			<img src="aaa.JPEG" width="100%" height="100%">
+		</div>
+		<div class="bb">
+			<img src="bbb.JPEG" width="100%" height="100%">
+		</div>
+		<div class="cc">
+			<img src="ccc.JPEG" width="100%" height="100%">
+		</div>
+		<div class="ee">
+			<img src="eee.JPEG" width="100%" height="100%">
+		</div>
+		<!-- <div class="gg">
+			<img src="ggg.JPEG" width="100%" height="100%">
+		</div> -->
+		<div class="ff">
+			<img src="bbb.JPEG" width="100%" height="100%">
+		</div>
+
+		<!-- ..........cloud place................ -->
+
+	<div class="sun"></div>
+	<!-- <div class="cloud1">
+		<img src="erth.JPEG">
+	</div> -->
+	<div class="cloud2">
+
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<div class="cloud3">
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<div class="cloud4">
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<div class="cloud5">
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<div class="cloud6">
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<div class="cloud7">
+		<img src="cloud2.png" width="100%" height="100%">
+	</div>
+	<!-- <div class="cloud5">
+		<img src="cloud.jpeg" width="100%" height="100%">
+	</div> -->
+
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

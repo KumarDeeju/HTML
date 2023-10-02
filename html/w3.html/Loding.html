@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: 230px;
+			height: 230px;
+			justify-items: center;
+		}
+		.load{
+			border: 16px solid darkred;
+			border-radius: 50% ;
+			border-top: 16px solid white;
+			width: 120px;
+			height: 120px;
+			animation: rotate 2s linear infinite;
+/*			position: relative;*/
+
+		}
+		.animation-size{
+			justify-items: center;
+			text-align: center;
+			justify-content: center;
+		}.boxsize{
+			width: 200px;
+			height: 200px;
+			padding-top: 50%;
+			padding-bottom: 50%;
+			padding-left: 50%;
+			padding-right: 50%;
+			background: yellow;
+		}
+		@keyframes rotate {
+			0%{transform: rotate(0deg);}
+			0%{transform: rotate(360deg);}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="boxsize">
+	<h1 class="animation-size">Loading animation in HTML</h1>
+	<div class="load bord"></div>
+	<h3>	Network error.....</h3>
+	</div>
+</body>
+</html>

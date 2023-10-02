@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array</title>
+</head>
+<body>
+	<h1 id="res"></h1>
+	<button onclick="getDate()">Date</button>
+	<button onclick="Year()">Year</button>
+	<button onclick="Month()">Month</button>
+	<button onclick="hours()">hours</button>
+	<button onclick="minuts()">minuts</button>
+	<button onclick="day()">day</button>
+	<button onclick="second()">second</button>
+</body>
+	<script type="text/javascript">
+		var date = new Date();
+		function getDate(){
+			document.getElementById('res').innerText = date;
+
+		}
+		function Year(){
+			document.getElementById('res').innerText = date.getFullYear();
+
+		}
+		
+		function Month(){
+			var Month = ["jan","feb","march","apr","may","june","jul","aug","septmeber"];
+			document.getElementById('res').innerText = Month[date.getMonth()];
+		}
+		function hours(){
+			document.getElementById('res').innerText = date.getHours();
+		}
+		function minuts(){
+			document.getElementById('res').innerText = date.getMinutes();
+		}
+		function day(){
+			document.getElementById('res').innerText = date.getDay();
+		}
+		function second(){
+			document.getElementById('res').innerText = date.getSeconds();
+		}
+
+	</script>
+
+</html>

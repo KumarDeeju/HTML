@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Regestration Form</title>
+</head>
+<body>
+    <h1>Online Registration Form</h1>
+    <form>
+        <label for="abs">Name :</label>
+        <input type="text" name="abs" id="abs">
+        <br><br>
+        <label for="mail">Email :</label>
+        <input type="email" name="mail" id="mail">
+        <br><br>
+        <label for="num">Mobile Number :</label>
+        <input type="tel" name="num" id="num">
+        <br><br>
+        <label for="resume">Upload Resume</label>
+        <input type="file" name="resume" id="resume">
+        <br><br>
+        <label for="exp">Exprence(Year)</label>
+        <input type="number" name="exp" id="exp" min="0" max="50">
+        <br><br>
+
+        <fieldset>
+            <legend>Skill</legend>
+            <label for="Java">Java Program</label>
+            <input type="checkbox" name="Java" id="Java">
+            <br>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="html" id="html">
+            <br>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" id="css">
+            <br>
+            <label for="Javas">JavaScreept</label>
+            <input type="checkbox" name="Javas" id="Javas">
+        </fieldset>
+
+        <label for="study">Highest Qualification :</label>
+        <select name="study" id="study">
+            <option value="Other">Select</option>
+            <option value="Matric">Matric</option>
+            <option value="Intermideat">Intermideat</option>
+            <option value="Bechlor of Arts">Bechlor of Arts</option>
+            <option value="Post Graduation">Post Graduation</option>
+            <option value="P.H.D">P.H.D</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Avalablity :</legend>
+        <!-- <label for="abs">Avalablity :</label> -->
+        <input type="radio" name="abs" id="abs">Full Time
+        <input type="radio" name="abs" id="abs">Part Time
+    </fieldset>
+        <br><br>
+        <label for="com">Additional Comment :</label><br>
+        <textarea name="com" id="com" cols="30" rows="5"></textarea>
+        <button>Register</button>
+
+    </form>
+</body>
+</html>
